@@ -9,4 +9,5 @@ export default defineNuxtConfig({
   },
   typescript: { shim: false },
   modules: ['@davestewart/nuxt-scrollbar', 'nuxt-icon', '@nuxtjs/device'],
+  css: ['~/assets/css/main.css'],
 });
