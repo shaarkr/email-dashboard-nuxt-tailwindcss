@@ -10,4 +10,14 @@ export default defineNuxtConfig({
   typescript: { shim: false },
   modules: ['@davestewart/nuxt-scrollbar', 'nuxt-icon', '@nuxtjs/device'],
   css: ['~/assets/css/main.css'],
+
+  app: {
+    head: {
+      title: 'Nuxt 3 - Email Dashboard',
+      link: [
+        { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
+        { rel: 'preconnect', href: 'https://rsms.me/' },
+      ],
+    },
+  },
 });
