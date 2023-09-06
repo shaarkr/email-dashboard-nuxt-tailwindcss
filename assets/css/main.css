@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Transition for labels */
+.labels-enter-active,
+.labels-leave-active {
+  transition: all 0.2s ease;
+}
+
+.labels-enter-from, .labels-leave-to {
+  opacity: 0;
+  transform: translateY(-10px)
+}
+
+/* Tooltip Styles */
+.v-popper__inner {
+  @apply text-xs;
+}
