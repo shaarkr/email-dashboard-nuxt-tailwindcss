@@ -12,6 +12,7 @@
       class="h-screen relative md:w-full w-screen transition border-l border-zinc-800">
       <!-- Heading of Details -->
       <InboxDetailsHeading />
+
       <div class="px-10 py-7 border-b border-zinc-800">
         <!-- Sender details -->
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mt-3">
@@ -44,10 +45,29 @@
             voluptatum pariatur vero eius expedita quidem natus?
           </p>
         </div>
-
         <div class="flex items-center justify-between text-sm text-zinc-200 mt-10">
           <p>Plato Agency HR</p>
           <a href="#" class="underline underline-offset-2">platowork.com</a>
+        </div>
+
+        <!-- Fixed bottom bar -->
+        <div
+          class="absolute w-full bottom-0 left-0 flex items-center justify-between bg-zinc-900/50 px-7 h-12">
+          <div class="flex items-center gap-5">
+            <button class="text-sm flex items-center gap-2">
+              <Icon name="solar:reply-bold-duotone" size="20" />
+              <span>Relpy</span>
+            </button>
+            <button class="text-sm flex items-center gap-2">
+              <Icon name="solar:forward-bold-duotone" size="20" />
+              <span>Forward</span>
+            </button>
+          </div>
+
+          <button class="text-amber-400 flex items-center gap-2">
+            <Icon name="solar:stars-bold-duotone" size="22" />
+            <span class="sr-only">Favorite</span>
+          </button>
         </div>
       </div>
     </div>
