@@ -25,17 +25,17 @@
     <div class="flex items-center gap-3">
       <button
         @click="msgOpen = false"
-        tooltip="'Go back'"
+        v-tooltip="'Go back'"
         class="text-zinc-500 hover:text-zinc-200 transition">
         <Icon name="solar:arrow-left-line-duotone" size="18" />
       </button>
       <button
-        tooltip="'Archive this email'"
+        v-tooltip="'Archive this email'"
         class="text-zinc-500 hover:text-zinc-200 transition">
         <Icon name="solar:archive-check-line-duotone" size="18" />
       </button>
       <button
-        tooltip="'Delete this email'"
+        v-tooltip="'Delete this email'"
         class="text-zinc-500 hover:text-zinc-200 transition">
         <Icon name="solar:trash-bin-minimalistic-line-duotone" size="18" />
       </button>
@@ -43,13 +43,13 @@
 
     <div class="flex items-center gap-3">
       <button
-        tooltip="'View previous'"
+        v-tooltip="'View previous'"
         class="text-zinc-500 inline-flex items-center hover:text-zinc-200 transition cursor-not-allowed">
         <Icon name="solar:round-alt-arrow-left-bold-duotone" size="20" />
       </button>
       <div class="text-xs text-zinc-400">1 of 485</div>
       <button
-        tooltip="'View next email'"
+        v-tooltip="'View next email'"
         class="text-zinc-200 inline-flex items-center hover:text-zinc-200 transition">
         <Icon name="solar:round-alt-arrow-right-bold-duotone" size="20" />
       </button>
@@ -58,17 +58,17 @@
     <div class="flex items-center gap-3">
       <button
         @click="msgOpen = false"
-        tooltip="'Print email'"
+        v-tooltip="'Print email'"
         class="text-zinc-500 hover:text-zinc-200 transition">
         <Icon name="solar:printer-2-outline" size="18" />
       </button>
       <button
-        tooltip="'Oenn in new window'"
+        v-tooltip="'Oenn in new window'"
         class="text-zinc-500 hover:text-zinc-200 transition">
         <Icon name="solar:arrow-right-up-line-duotone" size="18" />
       </button>
       <button
-        tooltip="'More options'"
+        v-tooltip="'More options'"
         class="text-zinc-500 hover:text-zinc-200 transition">
         <Icon name="solar:menu-dots-square-line-duotone" size="18" />
       </button>

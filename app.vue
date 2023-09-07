@@ -4,7 +4,7 @@
     <Sidebar />
 
     <!-- Message List Area -->
-    <InboxMessage />
+    <InboxMessage :class="[msgOpen && isMobileOrTablet ? 'hidden transition' : '']" />
 
     <!-- Message Details -->
     <div
@@ -30,7 +30,7 @@
           </div>
           <div>
             <span class="text-xs text-zinc-500 font-medium"
-              >Today 10:17 PM (3hr ago)</span
+              >Today&comma; 10:17 PM (3hr ago)</span
             >
           </div>
         </div>
@@ -56,7 +56,7 @@
           <div class="flex items-center gap-5">
             <button class="text-sm flex items-center gap-2">
               <Icon name="solar:reply-bold-duotone" size="20" />
-              <span>Relpy</span>
+              <span>Reply</span>
             </button>
             <button class="text-sm flex items-center gap-2">
               <Icon name="solar:forward-bold-duotone" size="20" />
@@ -80,6 +80,8 @@
       class: "bg-zinc-950 text-zinc-50 min-h-screen",
     },
   });
+
+  const { isMobileOrTablet } = useDevice();
 
   // state of selected message
   const msgOpen = useState("msgOpen", () => false);
