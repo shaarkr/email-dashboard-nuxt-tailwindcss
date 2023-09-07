@@ -33,6 +33,22 @@
             >
           </div>
         </div>
+
+        <!-- Message Body -->
+        <h2 class="mt-10 font-medium">Interview - Plato Agency</h2>
+        <div class="text-sm text-zinc-400 mt-5 space-y-3">
+          <p>Hello John, we hope you are doing well!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cum in
+            repudiandae optio et dolores, est possimus aut error, id eligendi numquam
+            voluptatum pariatur vero eius expedita quidem natus?
+          </p>
+        </div>
+
+        <div class="flex items-center justify-between text-sm text-zinc-200 mt-10">
+          <p>Plato Agency HR</p>
+          <a href="#" class="underline underline-offset-2">platowork.com</a>
+        </div>
       </div>
     </div>
   </div>
